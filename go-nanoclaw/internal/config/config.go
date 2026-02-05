@@ -42,7 +42,7 @@ func DefaultConfig() *Config {
 	projectRoot, _ := os.Getwd()
 	homeDir, _ := os.UserHomeDir()
 
-	assistantName := getEnvOrDefault("ASSISTANT_NAME", "Andy")
+	assistantName := getEnvOrDefault("ASSISTANT_NAME", "Mu")
 	triggerPattern := regexp.MustCompile(`(?i)^@` + regexp.QuoteMeta(assistantName) + `\b`)
 
 	return &Config{
