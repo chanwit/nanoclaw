@@ -6,6 +6,8 @@ import (
 	"fmt"
 	"os"
 
+	_ "github.com/mattn/go-sqlite3" // SQLite driver
+
 	"github.com/nanoclaw/go-nanoclaw/internal/config"
 	"github.com/nanoclaw/go-nanoclaw/internal/logger"
 	"github.com/nanoclaw/go-nanoclaw/internal/whatsapp"

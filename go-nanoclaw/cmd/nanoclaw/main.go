@@ -13,6 +13,8 @@ import (
 	"syscall"
 	"time"
 
+	_ "github.com/mattn/go-sqlite3" // SQLite driver
+
 	"github.com/nanoclaw/go-nanoclaw/internal/config"
 	"github.com/nanoclaw/go-nanoclaw/internal/container"
 	"github.com/nanoclaw/go-nanoclaw/internal/db"
